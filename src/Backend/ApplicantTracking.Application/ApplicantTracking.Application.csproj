@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+    <PackageReference Include="FluentValidation" Version="11.11.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Shared\ApplicantTracking.Communication\ApplicantTracking.Communication.csproj" />
+    <ProjectReference Include="..\..\Shared\ApplicantTracking.Exceptions\ApplicantTracking.Exceptions.csproj" />
+    <ProjectReference Include="..\ApplicantTracking.Domain\ApplicantTracking.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

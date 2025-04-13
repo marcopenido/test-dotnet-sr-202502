@@ -2,3 +2,9 @@ services:
   test.db:
     image: mcr.microsoft.com/mssql/server:2019-latest
     container_name: test.db
+
+  redis:
+    image: redis:latest
+    container_name: redis.test
+    ports:
+      - "6379:6379"

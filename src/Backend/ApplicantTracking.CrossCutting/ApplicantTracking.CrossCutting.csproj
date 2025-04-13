@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Serilog.AspNetCore" Version="7.0.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="7.3.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ApplicantTracking.Application\ApplicantTracking.Application.csproj" />
+    <ProjectReference Include="..\ApplicantTracking.Domain\ApplicantTracking.Domain.csproj" />
+    <ProjectReference Include="..\ApplicantTracking.Infrastructure\ApplicantTracking.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
